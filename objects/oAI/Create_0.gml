@@ -25,7 +25,7 @@ enum _conditions {
 	}
 
 // Conditional conditional constants
-#macro _tiles_MaxDist 64
+#macro _tiles_MaxDist 128
 #macro _enemies_MaxDist 160
 
 // Conditions database

@@ -25,7 +25,11 @@ if (vsp < maxGravity) vsp += grav * dt;
 
 //Jump
 if (jump){
-	Actions_run(act_jump);
+	if (grounded || enableUnlimitedJumps) {
+		vsp = -speedJump;
+	
+		jumpHeld = true
+	}
 }
 
 //Jump held

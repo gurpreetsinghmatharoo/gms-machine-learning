@@ -12,7 +12,7 @@ if (keyboard_check_pressed(ord("R"))) {
 }
 
 // Current conditional object
-var myCond = [];
+var myCond = Actions_createConditionalArray();
 Actions_createConditional(myCond);
 
 // Check with conditions in database
@@ -27,6 +27,6 @@ for (var a=0; a<size; a++) {
 	
 	// Compare and execute
 	if (Actions_comparable(myCond, arrCond)) {
-		script_execute(action);
+		script_execute(action, arrVals);
 	}
 }

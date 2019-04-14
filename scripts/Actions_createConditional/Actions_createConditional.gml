@@ -15,7 +15,7 @@ for (var i=0; i<4; i++) {
 		push(arrCond[0], [dir, tile_dist]);
 		
 		// Debug draw
-		if (object_index == oPlayer) {
+		if (object_index == oPlayer && tile_dist > -1) {
 			surface_set_target(oManager.debugSurf);
 		
 			draw_line_width_color(x, y, x + lengthdir_x(dist, dir), y + lengthdir_y(dist, dir), 2, c_white, c_red);
