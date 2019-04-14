@@ -13,7 +13,7 @@ var _y2 = argument[3];
 var dir = point_direction(_x1, _y1, _x2, _y2);
 var dist = point_distance(_x1, _y1, _x2, _y2);
 
-for(var i=0; i<=dist; i++){
+for(var i=0; i<=dist; i+=4){
 	var _x = _x1 + lengthdir_x(i, dir);
 	var _y = _y1 + lengthdir_y(i, dir);
 	

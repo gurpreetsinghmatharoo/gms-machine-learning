@@ -40,14 +40,16 @@ for (var i=0; i<2; i++) {
 	
 	// Check where it ends
 	var dist = -1;
+	var ground_below = false;
 	
-	for (var j=16; j<_edges_MaxDist * grounded; j+=8) {
+	for (var j=16; j<_edges_MaxDist * grounded; j+=4) {
 		if (!tilemap_collision(global.tilemap, x + j, bbox_bottom + 16)) {
 			dist = j;
+			ground_below = collision_line_tile(x + j, bbox_bottom + 16, x + j, room_height);
 			break;
 		}
 	}
 	
 	// Add
-	push(arrCond[_conditions.close_edges], [dir, dist]);
+	push(arrCond[_conditions.close_edges], [dir, dist, ground_below]);
 }

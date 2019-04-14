@@ -50,15 +50,17 @@ for (var i=0; i<array_length_1d(arrEdges); i++) {
 	
 	var dir = arr[0];
 	var dist = arr[1];
+	var ground_below = arr[2];
 	
 	// myData
 	var arrMy = myTiles[i];
 	
 	var dirMy = arrMy[0];
 	var distMy = arrMy[1];
+	var ground_belowMy = arrMy[2];
 	
 	// Compare
-	if (dir != dirMy || abs(dist - distMy) > 8 || (dist==-1 && distMy!=-1) || (dist!=-1 && distMy==-1)) {
+	if (dir != dirMy || abs(dist - distMy) > 4 || (dist==-1 && distMy!=-1) || (dist!=-1 && distMy==-1) || ground_below != ground_belowMy) {
 		comparable = false;
 		break;
 	}
