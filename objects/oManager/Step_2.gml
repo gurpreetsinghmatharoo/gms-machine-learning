@@ -10,3 +10,11 @@ camX = clamp(camX, 0, room_width-CAM.W);
 camY = clamp(camY, 0, room_height-CAM.H);
 
 camera_set_view_pos(view_camera, camX, camY);
+
+//Switch follow object
+if (keyboard_check_pressed(ord("C"))) {
+	if (followObject == oPlayer)
+		followObject = oAI;
+	else
+		followObject = oPlayer;
+}

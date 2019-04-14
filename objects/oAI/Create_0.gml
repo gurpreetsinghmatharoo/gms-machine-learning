@@ -1,6 +1,9 @@
 /// @description 
 event_inherited();
 
+// Props
+image_blend = c_fuchsia;
+
 // Action entry object properties
 enum _an {
 	action,
@@ -28,6 +31,7 @@ enum _conditions {
 
 // Conditional conditional constants
 #macro _tiles_MaxDist 128
+#macro _edges_MaxDist 96
 #macro _enemies_MaxDist 160
 
 // Conditions database

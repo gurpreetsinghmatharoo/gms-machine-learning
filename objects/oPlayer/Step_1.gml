@@ -10,7 +10,7 @@ jumpHold = keyboard_check(keyJump);
 run = keyboard_check(keyRun) && enableRun;
 
 //Changed hor
-if (hor != horPrev) {
+if (hor != horPrev && hor > 0) {
 	Actions_run(act_setHor, [hor]);
 }
 

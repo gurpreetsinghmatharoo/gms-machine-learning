@@ -1,4 +1,7 @@
 /// @description
+// Image
+image_blend = c_lime;
+
 // Movement Properties
 speedWalk = 2;
 speedRun = 3;
@@ -34,6 +37,8 @@ grav = speedGravity;
 
 hor = 0; //horizontal movement value
 horPrev = hor; //Previous hor value
+
+grounded = false;
 
 jumpHeld = false;
 

@@ -22,6 +22,12 @@ for (var i=0; i<4; i++) {
 			surface_set_target(oManager.debugSurf);
 		
 			draw_line_width_color(x, y, x + lengthdir_x(dist, dir), y + lengthdir_y(dist, dir), 2, c_white, c_red);
+			
+			draw_set_color(c_blue);
+			draw_arrow(x, y, x + hor * 32, y, 10);
+			
+			if (hor == 0) draw_circle(x, y, 10, 0);
+			draw_set_color(c_white);
 		
 			surface_reset_target();
 		}
@@ -33,5 +39,15 @@ for (var i=0; i<2; i++) {
 	var dir = i * 180;
 	
 	// Check where it ends
+	var dist = -1;
 	
+	for (var j=16; j<_edges_MaxDist * grounded; j+=8) {
+		if (!tilemap_collision(global.tilemap, x + j, bbox_bottom + 16)) {
+			dist = j;
+			break;
+		}
+	}
+	
+	// Add
+	push(arrCond[_conditions.close_edges], [dir, dist]);
 }

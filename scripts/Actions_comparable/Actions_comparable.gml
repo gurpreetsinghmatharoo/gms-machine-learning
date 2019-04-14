@@ -40,5 +40,29 @@ for (var i=0; i<array_length_1d(arrTiles); i++) {
 	}
 }
 
+// Edges
+var myEdges = myCond[_conditions.close_edges];
+var arrEdges = arrCond[_conditions.close_edges];
+
+for (var i=0; i<array_length_1d(arrEdges); i++) {
+	// Data
+	var arr = arrTiles[i];
+	
+	var dir = arr[0];
+	var dist = arr[1];
+	
+	// myData
+	var arrMy = myTiles[i];
+	
+	var dirMy = arrMy[0];
+	var distMy = arrMy[1];
+	
+	// Compare
+	if (dir != dirMy || abs(dist - distMy) > 8 || (dist==-1 && distMy!=-1) || (dist!=-1 && distMy==-1)) {
+		comparable = false;
+		break;
+	}
+}
+
 // Return
 return comparable;

@@ -9,6 +9,7 @@ run = 0;
 if (keyboard_check_pressed(ord("R"))) {
 	x = xstart;
 	y = ystart;
+	oPlayer.x = x;
 	
 	if (keyboard_check(vk_shift)) game_restart();
 }
