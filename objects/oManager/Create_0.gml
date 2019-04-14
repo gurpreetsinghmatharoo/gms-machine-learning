@@ -13,9 +13,9 @@ followSpeed = 0.5; //1 is instant
 if (enableCamera){
 	//Resolution
 	enum CAM{
-		W = 256,
-		H = 144,
-		SCALE = 4
+		W = 480,
+		H = 270,
+		SCALE = 2
 	}
 
 	//Views
@@ -49,6 +49,8 @@ global.factorAvg = 0;
 #endregion
 
 #region Debugging
+show_debug_overlay(1);
+
 // Debug surface
 debugSurf = -1;
 #endregion
