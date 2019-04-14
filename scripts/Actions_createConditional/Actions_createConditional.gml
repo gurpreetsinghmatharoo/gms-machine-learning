@@ -46,6 +46,18 @@ for (var i=0; i<2; i++) {
 		if (!tilemap_collision(global.tilemap, x + j, bbox_bottom + 16)) {
 			dist = j;
 			ground_below = collision_line_tile(x + j, bbox_bottom + 16, x + j, room_height);
+			
+			// Debug draw
+			if (object_index == oPlayer) {
+				surface_set_target(oManager.debugSurf);
+			
+				draw_set_color(c_red);
+				draw_arrow(x + j, bbox_bottom, x + j, bbox_bottom + 20, 16);
+				draw_set_color(c_white);
+		
+				surface_reset_target();
+			}
+			
 			break;
 		}
 	}

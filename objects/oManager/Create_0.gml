@@ -7,7 +7,7 @@ res = 0;
 
 //Player following
 followObject = oPlayer;
-followSpeed = 0.5; //1 is instant
+followSpeed = 0.1; //1 is instant
 
 //Camera
 if (enableCamera){

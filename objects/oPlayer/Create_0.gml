@@ -13,7 +13,7 @@ speedSmooth = 0.2;
 speedGravity = 0.5;
 maxGravity = 10;
 
-speedJump = 5;
+speedJump = 6;
 speedJumpHigh = 0.42; //Additional jump speed for variable "enableHighJump" below
 
 // Input Properties
