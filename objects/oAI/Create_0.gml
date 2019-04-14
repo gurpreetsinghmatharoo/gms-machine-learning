@@ -30,7 +30,7 @@ enum _conditions {
 	}
 
 // Conditional conditional constants
-#macro _tiles_MaxDist 128
+#macro _tiles_MaxDist 96
 #macro _edges_MaxDist 96
 #macro _enemies_MaxDist 160
 
