@@ -1,7 +1,18 @@
 /// @description 
+event_inherited();
+
+// Action entry object properties
+enum _an {
+	action,
+	values,
+	
+	conditions
+}
+
 // Conditional object properties
-enum _cn {
+enum _conditions {
 	close_tiles,
+	close_edges,
 	close_enemies
 }
 	enum _tiles {
@@ -13,4 +24,9 @@ enum _cn {
 		distance
 	}
 
+// Conditional conditional constants
+#macro _tiles_MaxDist 64
+#macro _enemies_MaxDist 160
+
 // Conditions database
+condDat = ds_list_create();

@@ -18,8 +18,8 @@ for(var i=0; i<=dist; i++){
 	var _y = _y1 + lengthdir_y(i, dir);
 	
 	if (tilemap_get_at_pixel(global.tilemap, _x, _y)){
-		return true;
+		return dist;
 	}
 }
 
-return false;
+return -1;

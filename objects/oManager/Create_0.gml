@@ -47,3 +47,8 @@ global.factorAvg = 0;
 //Macro
 #macro dt global.delta_factor
 #endregion
+
+#region Debugging
+// Debug surface
+debugSurf = -1;
+#endregion

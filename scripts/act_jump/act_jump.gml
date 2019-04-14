@@ -1,1 +1,6 @@
-ClassActions_run();
+// Action
+if (grounded || enableUnlimitedJumps) {
+	vsp = -speedJump;
+	
+	jumpHeld = true
+}

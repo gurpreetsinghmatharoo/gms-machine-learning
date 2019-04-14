@@ -10,16 +10,6 @@ if (grounded && alarm[0]<0){
 }
 
 #region Platformer Movement
-//Input
-var hor, jump, jumpHold, run;
-hor = (keyboard_check(ord("D"))*enableWASD || keyboard_check(vk_right)*enableArrowKeys)
-	 -(keyboard_check(ord("A"))*enableWASD || keyboard_check(vk_left)*enableArrowKeys);
-	
-jump = keyboard_check_pressed(keyJump);
-jumpHold = keyboard_check(keyJump);
-
-run = keyboard_check(keyRun) && enableRun;
-
 //Movement
 var hspTarget = hor * (run ? speedRun : speedWalk) * dt;
 
@@ -34,10 +24,8 @@ else{
 if (vsp < maxGravity) vsp += grav * dt;
 
 //Jump
-if (jump && (grounded || enableUnlimitedJumps)){
-    vsp = -speedJump;
-	
-	jumpHeld = true;
+if (jump){
+	ClassActions_run(act_jump);
 }
 
 //Jump held

@@ -32,6 +32,9 @@ hsp = 0;
 vsp = 0;
 grav = speedGravity;
 
+hor = 0; //horizontal movement value
+horPrev = hor; //Previous hor value
+
 jumpHeld = false;
 
 groundedX = x;
