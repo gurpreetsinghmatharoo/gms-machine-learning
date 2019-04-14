@@ -11,5 +11,5 @@ run = keyboard_check(keyRun) && enableRun;
 
 //Changed hor
 if (hor != horPrev) {
-	ClassActions_run(act_setHor, [hor]);
+	Actions_run(act_setHor, [hor]);
 }

@@ -25,7 +25,7 @@ if (vsp < maxGravity) vsp += grav * dt;
 
 //Jump
 if (jump){
-	ClassActions_run(act_jump);
+	Actions_run(act_jump);
 }
 
 //Jump held

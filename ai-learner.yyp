@@ -58,7 +58,7 @@
             "Key": "16cce2ad-637d-4ac5-b648-c349a6d252b2",
             "Value": {
                 "id": "fe9e0cfc-24b5-41e1-b0e9-f0a1c96c01e5",
-                "resourcePath": "scripts\\ClassActions_comparable\\ClassActions_comparable.yy",
+                "resourcePath": "scripts\\Actions_comparable\\Actions_comparable.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -218,7 +218,7 @@
             "Key": "777538cf-7526-4613-b853-295c913d45b6",
             "Value": {
                 "id": "fe95c6b1-928d-42fe-991c-84831ff18cf0",
-                "resourcePath": "scripts\\ClassActions_createConditional\\ClassActions_createConditional.yy",
+                "resourcePath": "scripts\\Actions_createConditional\\Actions_createConditional.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -466,7 +466,7 @@
             "Key": "fd837128-d290-4f51-9db8-a84a5851d023",
             "Value": {
                 "id": "60ae253f-34b5-4f1a-aa20-ec91874d3d73",
-                "resourcePath": "scripts\\ClassActions_run\\ClassActions_run.yy",
+                "resourcePath": "scripts\\Actions_run\\Actions_run.yy",
                 "resourceType": "GMScript"
             }
         },

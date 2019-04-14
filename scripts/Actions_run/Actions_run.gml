@@ -10,7 +10,7 @@ var arr = [argument[0], arrVals, arrCond];
 script_execute(argument[0], arrVals);
 
 // Conditions
-
+Actions_createConditional(arrCond);
 
 // Store
 ds_list_add(oAI.condDat, arr);

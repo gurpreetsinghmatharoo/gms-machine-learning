@@ -12,11 +12,21 @@ if (keyboard_check_pressed(ord("R"))) {
 }
 
 // Current conditional object
-
+var myCond = [];
+Actions_createConditional(myCond);
 
 // Check with conditions in database
 var size = ds_list_size(condDat);
 
-for (var i=0; i<size; i++) {
+for (var a=0; a<size; a++) {
+	// Base array data
+	var arr = condDat[| a];
+	var action = arr[_an.action];
+	var arrVals = arr[_an.values];
+	var arrCond = arr[_an.conditions];
 	
+	// Compare and execute
+	if (Actions_comparable(myCond, arrCond)) {
+		script_execute(action);
+	}
 }
