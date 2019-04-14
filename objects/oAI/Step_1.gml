@@ -27,7 +27,7 @@ for (var a=0; a<size; a++) {
 	var arrVals = arr[_an.values];
 	var arrCond = arr[_an.conditions];
 	
-	//log("Object ", a, " tiles conditions size: ", array_length_1d(arrCond[0]));
+	//log("Object ", a, " tiles conditions size: ", array_length_1d(arrCond[_conditions.booleans]));
 	
 	// Compare and execute
 	if (Actions_comparable(myCond, arrCond)) {

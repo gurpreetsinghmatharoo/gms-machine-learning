@@ -6,6 +6,16 @@ var arrCond = argument[1];
 var comparable = true;
 
 // Check if not comparable
+// Booleans
+var myBools = myCond[_conditions.booleans];
+var arrBools = arrCond[_conditions.booleans];
+
+for (var i=0; i<array_length_1d(arrBools); i++) {
+	if (arrBools[i] != myBools[i]) {
+		comparable = false;
+	}
+}
+
 // Tiles
 var myTiles = myCond[_conditions.close_tiles];
 var arrTiles = arrCond[_conditions.close_tiles];

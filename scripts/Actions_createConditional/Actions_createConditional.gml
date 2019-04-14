@@ -1,6 +1,9 @@
 /// @arg arrCond
 var arrCond = argument[0];
 
+// Values
+push(arrCond[_conditions.booleans], grounded);
+
 // Tiles
 for (var i=0; i<4; i++) {
 	var dir = i * 90;
@@ -12,7 +15,7 @@ for (var i=0; i<4; i++) {
 	//if (tile_dist > -1) {
 	if (1) {
 		// Add
-		push(arrCond[0], [dir, tile_dist]);
+		push(arrCond[_conditions.close_tiles], [dir, tile_dist]);
 		
 		// Debug draw
 		if (object_index == oPlayer && tile_dist > -1) {
@@ -23,4 +26,12 @@ for (var i=0; i<4; i++) {
 			surface_reset_target();
 		}
 	}
+}
+
+// Edges
+for (var i=0; i<2; i++) {
+	var dir = i * 180;
+	
+	// Check where it ends
+	
 }

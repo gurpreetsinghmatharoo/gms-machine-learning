@@ -11,6 +11,8 @@ enum _an {
 
 // Conditional object properties
 enum _conditions {
+	booleans,
+	
 	close_tiles,
 	close_edges,
 	close_enemies
