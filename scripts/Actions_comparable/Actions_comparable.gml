@@ -24,8 +24,9 @@ for (var i=0; i<array_length_1d(arrTiles); i++) {
 	var tile_distMy = arrMy[1];
 	
 	// Compare
-	if (dir != dirMy || abs(tile_dist - tile_distMy) > 8) {
+	if (dir != dirMy || abs(tile_dist - tile_distMy) > 8 || (tile_dist==-1 && tile_distMy!=-1) || (tile_dist!=-1 && tile_distMy==-1)) {
 		comparable = false;
+		break;
 	}
 }
 
